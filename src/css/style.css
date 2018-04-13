@@ -122,6 +122,7 @@ html,
 }
 
 .main .yao {
+<<<<<<< HEAD
 	height: 150px;
 	background: lightblue;
 	text-align: center;
@@ -136,3 +137,62 @@ html,
 	text-align: center;
 }
 
+.yao .left,
+.null {
+    flex: 2;
+}
+
+.yao .left {
+    font-size: 12px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 20px;
+}
+
+.yao .left h2 {
+    font-size: 20px;
+}
+
+.yao .right {
+    flex: 6;
+    background: #fff;
+    display: flex;
+}
+
+.yao .right dd {
+    flex: 6;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+.yao .right dd h6 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.yao .right dd p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+}
+
+.yao .right dt {
+    flex: 4;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.yao .right dt i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0ff;
+    margin-left: 50%;
+    position: relative;
+    left: -20px;
+}
