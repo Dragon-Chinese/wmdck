@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Document</title>
-	<link rel="stylesheet" href="src/css/style.css" />
-	<link rel="stylesheet" type="text/css" href="src/fonts/iconfont.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="src/fonts/iconfont.css" />
+    <link rel="stylesheet" href="src/css/swiper-3.4.2.min.css">
 </head>
+
 <body>
-	<div class="wrap">
-		<header class="header">
-			石富强
-		</header>
-		<main class="main">
-			<nav class="nav">
-				<ul>
+
+    <div class="wrap">
+        <div class="header swiper-container">
+            <div class="top">
+                <p><i class="icon iconfont icon-gengduo-2"></i></p>
+                <input type="text" placeholder="钓鱼竿">
+            </div>
+            <div class="swiper-wrapper banner">
+                <div class="swiper-slide picture"><img src="src/img/1.jpg" alt=""></div>
+                <div class="swiper-slide picture"><img src="src/img/2.png" alt=""></div>
+                <div class="swiper-slide picture"><img src="src/img/3.png" alt=""></div>
+                <div class="swiper-slide picture"><img src="src/img/4.png" alt=""></div>
+            </div>
+        </div>
+        <main class="main">
+            <nav class="nav">
+                <ul>
 					<li>第一</li>
 					<li>第二</li>
 					<li>第三</li>
 					<li>第四</li>
 				</ul>
-			</nav>
-			<div class="ban">
-				<img src="src/img/img1.png" alt="" />
-			</div>
-			<div class="yao">
-				姚世轩
-			</div>
-		</main>
-		<footer class="footer">
-			<ul>
-				<li class="Act"><i class="icon iconfont icon-shouye" id="icon"></i><b>首页</b></li>
-				<li><i class="icon iconfont icon-twitter" id="icon"></i><b>筛选</b></li>
-				<li><i class="icon iconfont icon-06" id="icon"></i><b>购物圈</b></li>
-				<li><i class="icon iconfont icon-gouwuche" id="icon"></i><b>购物车</b></li>
-				<li><i class="icon iconfont icon-wode" id="icon"></i><b>个人中心</b></li>
-			</ul>
-		</footer>
-	</div>
+            </nav>
+            <div class="ban">
+                <img src="src/img/img1.png" alt="" />
+            </div>
+            <div class="yao">
+                姚世轩
+            </div>
+        </main>
+        <footer class="footer">
+            <ul>
+                <li class="Act"><i class="icon iconfont icon-shouye" id="icon"></i><b>首页</b></li>
+                <li><i class="icon iconfont icon-twitter" id="icon"></i><b>筛选</b></li>
+                <li><i class="icon iconfont icon-06" id="icon"></i><b>购物圈</b></li>
+                <li><i class="icon iconfont icon-gouwuche" id="icon"></i><b>购物车</b></li>
+                <li><i class="icon iconfont icon-wode" id="icon"></i><b>个人中心</b></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="src/js/swiper-3.4.2.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 2000,
+            loop: true
+        })
+    </script>
 </body>
+
 </html>
